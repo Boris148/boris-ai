@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ — Boris AI</title>
+    <meta name="description" content="Everything you need to know about Boris AI — your autonomous AI operations manager for business.">
+    <meta property="og:title" content="FAQ — Boris AI">
+    <meta property="og:description" content="Common questions about Boris AI answered. How it works, pricing, privacy, and more.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .faq-item { border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .faq-question { display: flex; justify-content: space-between; align-items: center; padding: 24px 0; cursor: pointer; transition: color 0.3s; }
+        .faq-question:hover { color: var(--blue); }
+        .faq-question h3 { font-family: 'Oswald', sans-serif; font-size: 1.1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin: 0; }
+        .faq-question .faq-toggle { font-size: 1.5rem; color: var(--blue); transition: transform 0.3s; flex-shrink: 0; margin-left: 16px; }
+        .faq-question.open .faq-toggle { transform: rotate(45deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease; }
+        .faq-answer.open { max-height: 500px; padding-bottom: 24px; }
+        .faq-answer p { color: var(--gray); line-height: 1.8; font-size: 0.95rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-brand">
+            <a href="index.html" class="nav-logo">BORIS AI<span>.</span></a>
+            <span class="nav-by">by Social Elite</span>
+        </div>
+        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQ</a>
+            <a href="purchase.html" class="nav-cta">Get Started</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="page-hero" style="padding: 140px 20px 60px; text-align: center;">
+        <div class="section-inner">
+            <p class="section-tag">Got Questions?</p>
+            <h1 style="font-family: 'Oswald', sans-serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; text-transform: uppercase; margin-bottom: 16px; line-height: 1.1;">
+                Everything You Need to <span style="color: var(--blue);">Know</span>
+            </h1>
+            <p style="font-size: 1.05rem; color: rgba(255,255,255,0.5); max-width: 550px; margin: 0 auto;">Real answers to real questions from real business owners.</p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" style="padding-top: 20px;">
+        <div style="max-width: 750px; margin: 0 auto;">
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+                    <h3>What is Boris AI?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Boris AI is your own AI operations manager. Not a chatbot — an autonomous operator that lives on Telegram and handles the operational side of your business 24/7. It follows up on leads, monitors emails, manages your social media, tracks finances, sends daily briefings, and checks in with you proactively. It's like having a full-time operations manager for a fraction of the cost.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+                    <h3>How does it actually work?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You talk to your Boris through Telegram — just like texting a colleague. Tell it about your business goals, clients, processes, and it takes it from there. It doesn't wait for you to ask — it proactively checks in, reminds you about deadlines, drafts follow-up emails, plans your social content, and brings you opportunities. The more you use it, the smarter it gets.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+                    <h3>What's the difference between the tiers?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>Starter ($200 + $29/mo):</strong> Core AI ops — email monitoring, lead follow-up, social media engine, daily briefings, memory and personality. Perfect for solopreneurs who need basic operational support.<br><br><strong>Pro ($500 + $49/mo):</strong> Everything in Starter plus ad management, financial tracking, CRM automation, client communication, and invoice tracking. For business owners serious about scaling.<br><br><strong>Enterprise ($1,000 + $99/mo):</strong> The full suite. Everything in Pro plus multi-business support, contract templates, investor reporting, process documentation, and a self-evolving AI brain that dreams, reflects, and brings you opportunities proactively.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+                    <h3>Can it manage my social media?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. Boris creates content calendars, drafts posts, generates captions, and develops platform-specific strategies that match your brand voice. It knows your business, your audience, and your tone — so every post sounds like it came from you, not a robot.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+                    <h3>Can it track my finances?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes — on the Pro tier and above. Boris tracks revenue, expenses, invoices, and payments. It provides weekly financial summaries, sends payment reminders for outstanding invoices, and helps you understand where your money is coming from and going to. It's not a replacement for an accountant, but it keeps you informed and on top of your numbers daily.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+                    <h3>Is my data private?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>100%. Your Boris is completely isolated — it runs in its own environment with its own memory. No other business's AI can see your data, and we never share or sell your information. Your conversations, your financials, your strategy — it's all yours.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+                    <h3>What AI model does it use?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Boris runs on Gemini 2.5 Pro by default — a powerful, fast AI model perfect for business operations tasks. If you want even better creative writing and deeper reasoning, you can upgrade to our Premium Brain (Sonnet) or Ultimate Brain (Opus) add-ons. Think of it like choosing the engine in a car — the base model is great, the upgrades are incredible.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+                    <h3>How is this different from ChatGPT?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>ChatGPT forgets you every conversation. Boris remembers everything — your clients, your goals, your processes, your entire business history. It has its own personality that evolves over time. It checks in proactively without you asking. It's not a tool you use — it's an operations manager that works for you 24/7. That's the difference between a search engine and a teammate.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+                    <h3>What if I cancel?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>No contracts. Cancel anytime. If you're on a hosted plan, your Boris stays active until the end of your billing period. You keep all your data and conversation history. We'll even help you export everything if you want. No hard feelings — we want you to stay because it works, not because you're locked in.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+                    <h3>Can it send emails for me?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Boris drafts professional emails and follow-ups for you to review and approve. It monitors your inbox for important messages, flags items that need attention, and helps you stay on top of client communication. You always have final say — Boris drafts, you send.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open');">
+                    <h3>Does it integrate with my CRM?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Boris can work alongside your existing CRM by helping you track leads, draft follow-ups, and manage your pipeline through Telegram. On the Pro and Enterprise tiers, it provides CRM automation features that help you stay organized and never miss a follow-up. We're continuously expanding integration capabilities.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" style="padding: 80px 20px; text-align: center; position: relative;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(ellipse at center, rgba(26,107,255,0.06) 0%, transparent 70%); z-index: 0;"></div>
+        <div style="position: relative; z-index: 1;">
+            <h2 style="font-family: 'Oswald', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; text-transform: uppercase; margin-bottom: 16px;">Still Have Questions?</h2>
+            <p style="color: var(--gray); margin-bottom: 12px;">Email us: <a href="mailto:jeremy@semgllc.com" style="color: var(--blue);">jeremy@semgllc.com</a></p>
+            <p style="color: var(--gray); margin-bottom: 32px;">Or just get started — your Boris will answer everything else.</p>
+            <a href="purchase.html" class="btn-primary">Get Your Boris</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="padding: 40px 20px; text-align: center; border-top: 1px solid rgba(255,255,255,0.04);">
+        <p style="font-size: 0.75rem; color: #333; letter-spacing: 1px;">&copy; 2026 Boris AI by Social Elite Marketing Group. All rights reserved.</p>
+        <div style="margin-top: 12px; display: flex; justify-content: center; gap: 20px;">
+            <a href="index.html" style="font-size: 0.7rem; color: #444; text-decoration: none; letter-spacing: 1px; text-transform: uppercase;">Home</a>
+            <a href="pricing.html" style="font-size: 0.7rem; color: #444; text-decoration: none; letter-spacing: 1px; text-transform: uppercase;">Pricing</a>
+            <a href="about.html" style="font-size: 0.7rem; color: #444; text-decoration: none; letter-spacing: 1px; text-transform: uppercase;">About</a>
+            <a href="mailto:jeremy@semgllc.com" style="font-size: 0.7rem; color: #444; text-decoration: none; letter-spacing: 1px; text-transform: uppercase;">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>
